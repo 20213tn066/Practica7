@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="app">
+<form name="calculator">
+<input  type="textfield" name="respuesta" value="" autocomplete="off" readonly>
+<input id="appac" type="button" value="ac" onclick="document.calculator.respuesta.value=''">
+<input id="app2" type="button" value="-" onclick="document.calculator.respuesta.value+='8'" >
+<input  id="app2"type="button" value="%" onclick="document.calculator.respuesta.value+='%'">
+<input id="app3" type="button" value="/" onclick="document.calculator.respuesta.value+='/'">
+
+<br>
+<input id="app1" type="button" value="7" onclick="document.calculator.respuesta.value+='7'">
+<input id="app1" type="button" value="8" onclick="document.calculator.respuesta.value+='8'" >
+<input id="app1" type="button" value="9" onclick="document.calculator.respuesta.value+='9'">
+<input id="app3" type="button" value="X" onclick="document.calculator.respuesta.value+='*'">
+<br>
+<input id="app1" type="button" value="4" onclick="document.calculator.respuesta.value+='4'">
+<input id="app1" type="button" value="5" onclick="document.calculator.respuesta.value+='5'">
+<input id="app1" type="button" value="6" onclick="document.calculator.respuesta.value+='6'">
+<input id="app3" type="button" value="-" onclick="document.calculator.respuesta.value+='-'">
+<br>
+<input id="app1" type="button" value="1" onclick="document.calculator.respuesta.value+='1'">
+<input id="app1" type="button" value="2" onclick="document.calculator.respuesta.value+='2'">
+<input id="app1" type="button" value="3" onclick="document.calculator.respuesta.value+='3'">
+<input id="app3" type="button" value="+" onclick="document.calculator.respuesta.value+='+'">
+<br>
+<input id="app0" type="button" value="0" onclick="document.calculator.respuesta.value+='0'">
+<input id="app1" type="button" value="." onclick="document.calculator.respuesta.value+='.'">
+<input id="app3" type="button" value="=" onclick="document.calculator.respuesta.value=eval(document.calculator.respuesta.value)">
+
+</form>
+    </div>
+</body>
+</html>
